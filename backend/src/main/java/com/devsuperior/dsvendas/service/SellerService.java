@@ -16,7 +16,7 @@ public class SellerService {
 	@Autowired
 	private SellerRepository repository;
 	
-	public List<SellerDTO> findAll(){
+	public List<SellerDTO> findAll() {
 		List<Seller> result = repository.findAll();
 		//Map -> Converte minha coleção para uma nova coleção.
 		return result.stream().map(x -> new SellerDTO(x)).collect(Collectors.toList());

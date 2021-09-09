@@ -23,13 +23,13 @@ public class Seller {
 	private List<Sale> sales = new ArrayList<>();
 
 	public Seller() {
-
+		
 	}
 
-	public Seller(Long id, String name) {
-	
+	public Seller(Long id, String name, List<Sale> sales) {
 		this.id = id;
 		this.name = name;
+		this.sales = sales;
 	}
 
 	public Long getId() {
@@ -51,7 +51,6 @@ public class Seller {
 	public List<Sale> getSales() {
 		return sales;
 	}
-	
-	
+
 
 }

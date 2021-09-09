@@ -7,6 +7,7 @@ import com.devsuperior.dsvendas.entities.Seller;
 public class SellerDTO implements Serializable {
 
 	private static final long serialVersionUID = 1L;
+	
 	private Long id;
 	private String name;
 
@@ -15,13 +16,12 @@ public class SellerDTO implements Serializable {
 	}
 
 	public SellerDTO(Long id, String name) {
-		super();
 		this.id = id;
 		this.name = name;
 	}
-	public SellerDTO(Seller entity) { // Para que eu possa copiar facilmente os dados de uma entidade para o DTO
-		super();
-		id = entity.getId() ;// Pegar o entity da entidade e copiar para o id do DTO.
+
+	public SellerDTO(Seller entity) {                                                      // Para que eu possa copiar facilmente os dados de uma entidade para o DTO
+		id = entity.getId();                                                              // Pegar o entity da entidade e copiar para o id do DTO.
 		name = entity.getName();
 	}
 
@@ -40,5 +40,7 @@ public class SellerDTO implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	
 
 }
