@@ -23,7 +23,7 @@ function Dashboard() {
   
           <div className="py-3">
   
-            <h2 className="text-primary">Todas vendasx </h2>
+            <h2 className="text-primary">Todas vendas </h2>
           </div>
   
           </div>
